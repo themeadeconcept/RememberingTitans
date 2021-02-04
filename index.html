@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remembering Titans | Sports FAN page | Meade Concepts</title>
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- only want this to show if screen is 768px or less, hence the media attribute -->
     <link
@@ -17,12 +27,17 @@
       media="screen and (max-wdith: 768px)"
       href="css/mobile.css"
     />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
     <nav id="main-nav">
       <div class="container">
         <img src="img/RT-logo.png" alt="Remembering Titans" class="logo" />
+        <h1 class="logo-text">
+          &nbsp;Remembering<span class="titans">Titans</span>
+        </h1>
         <div class="social">
           <!-- adds facebook icon and scaled it 2x the size -->
           <a href="http://facebook.com" target="_blank"
@@ -37,12 +52,32 @@
           <a href="http://youtube.com" target="_blank"
             ><i class="fab fa-youtube fa-2x"></i
           ></a>
-          <ul>
-            <li><a class="currenthref="index.html">Home</a></li>
-            <li><a class="currenthref="about.html">About</a></li>
-          </ul>
         </div>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
     </nav>
+
+    <!-- Showcase -->
+    <header id="showcase">
+      <div class="container">
+        <div class="showcase-container">
+          <div class="showcase-content">
+            <div class="category category-sports">Sports</div>
+            <h1>INSERT SPORTS ARTICLE HERE</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ad
+              architecto commodi. Doloribus repellendus corrupti dignissimos
+              fugit fugiat. Voluptates repellat alias id neque consequuntur quia
+              voluptas, quae, excepturi saepe deserunt quibusdam, porro ducimus?
+              Eveniet laudantium dolorem quibusdam deleniti, mollitia neque.
+            </p>
+            <a href="article.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
