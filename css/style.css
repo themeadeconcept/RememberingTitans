@@ -7,9 +7,9 @@
 }
 
 .category {
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #009cff;
+  --boxing-color: #f99500;
+  --nba-color: #a66bbe;
+  --nfl-color: #009cff;
 }
 
 /* CSS Reset */
@@ -20,7 +20,8 @@
 }
 
 body {
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   line-height: 1.5;
   background: var(--light-color);
 }
@@ -34,6 +35,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 img {
   width: 100%;
 }
@@ -44,8 +49,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 0.55rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
   line-height: 2.2rem;
 }
 
@@ -66,25 +72,36 @@ h6 {
   overflow: hidden;
 }
 
+.container .showcase-container .showcase-content .category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
 .category {
   display: inline-block;
   color: #fff;
   font-size: 0.75rem;
   font-weight: bold;
-  text-transform: uppercsae;
+  text-transform: uppercase;
   padding: 0.4rem 0.6rem;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
 
-.category-sports {
-  background: var(--sports-color);
+.category-boxing {
+  background: var(--boxing-color);
 }
-.category-ent {
-  background: var(--ent-color);
+.category-nba {
+  background: var(--nba-color);
 }
-.category-tech {
-  background: var(--tech-color);
+.category-nfl {
+  background: var(--nfl-color);
 }
 
 .btn {
@@ -92,7 +109,7 @@ h6 {
   border: none;
   background: var(--dark-color);
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .btn-light {
@@ -105,14 +122,98 @@ h6 {
   background: var(--secondary-color);
 }
 
-.btn:hover {
-  opacity: 0.9;
-}
-
 .btn-block {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.card .category-nfl {
+  margin-top: 0.5rem;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 1.5rem;
+}
+
+.l-heading {
+  font-size: 3rem;
+  padding: 0.5rem 0;
+  line-height: 3rem;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Inner page grid container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
 }
 
 /* Navigation */
@@ -122,6 +223,13 @@ h6 {
   position: sticky;
   top: 0;
   z-index: 2;
+}
+
+#main-nav .logo-div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 #main-nav .container {
@@ -178,6 +286,7 @@ h6 {
   position: relative;
 }
 
+/* This adds the overlay on the showcase */
 #showcase:before {
   content: "";
   background: url("../img/aliChamber.jpg") no-repeat center center/cover;
@@ -192,16 +301,99 @@ h6 {
 /* resizes and aligns the showcase */
 #showcase .showcase-container {
   display: grid;
+  /* This makes a two column grid with 1 empty column to the left */
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   height: 50vh;
 }
 
+/* brings text on top of overlay */
 #showcase .showcase-content {
   z-index: 1;
 }
 
 #showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container {
+  display: grid;
+  /* sets 3 equal rows */
+  grid-template-columns: repeat(3, 1fr);
+  /* spaces out the grid items */
+  grid-gap: 1rem;
+}
+
+/* any element after the articles-container (> means direct child */
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  /* 2 equal columns */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  /* will take column 2 and span it 2 columns */
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child {
+  /* accesses last child of article-container and spans column 2, 2 columns */
+  grid-column: 2 / span 2;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+/* Footer */
+#main-footer {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+}
+
+#main-footer > div > div > img {
+  height: 100%;
+  width: 100%;
 }

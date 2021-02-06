@@ -13,9 +13,8 @@
     />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+SC&display=swap"
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,500|Oswald"
       rel="stylesheet"
     />
 
@@ -24,7 +23,7 @@
     <!-- only want this to show if screen is 768px or less, hence the media attribute -->
     <link
       rel="stylesheet"
-      media="screen and (max-wdith: 768px)"
+      media="screen and (max-width: 768px)"
       href="css/mobile.css"
     />
 
@@ -34,10 +33,12 @@
   <body>
     <nav id="main-nav">
       <div class="container">
-        <img src="img/RT-logo.png" alt="Remembering Titans" class="logo" />
-        <h1 class="logo-text">
-          &nbsp;Remembering<span class="titans">Titans</span>
-        </h1>
+        <div class="logo-div">
+          <img src="img/RT-logo.png" alt="Remembering Titans" class="logo" />
+          <h1 class="logo-text">
+            &nbsp;Remembering<span class="titans">Titans</span>
+          </h1>
+        </div>
         <div class="social">
           <!-- adds facebook icon and scaled it 2x the size -->
           <a href="http://facebook.com" target="_blank"
@@ -65,19 +66,152 @@
       <div class="container">
         <div class="showcase-container">
           <div class="showcase-content">
-            <div class="category category-sports">Sports</div>
-            <h1>INSERT SPORTS ARTICLE HERE</h1>
+            <div class="category category-boxing">Boxing</div>
+            <h1>Float Like a Butterfly, Smash Like the Hulk</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ad
-              architecto commodi. Doloribus repellendus corrupti dignissimos
-              fugit fugiat. Voluptates repellat alias id neque consequuntur quia
-              voluptas, quae, excepturi saepe deserunt quibusdam, porro ducimus?
-              Eveniet laudantium dolorem quibusdam deleniti, mollitia neque.
+              One of the greatest fights in boxing that never happend. How would
+              the Greatest of All Time fair against the NBA Champion?
             </p>
             <a href="article.html" class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Home Articles -->
+    <section id="home-articles" class="py-2">
+      <div class="container">
+        <h2>Editor Picks</h2>
+        <div class="articles-container">
+          <article class="card">
+            <img src="img/articles/kobeGym.jpg" alt="" />
+            <div>
+              <div class="category category-nba">Basketball</div>
+              <h3>
+                <a href="article.html">We miss you Kobe</a>
+              </h3>
+              <p>
+                As an avid Bulls fan, I definitely do not like the Lakers. They
+                win too much. I spent much of my young childhood DESPISING Kobe.
+                I must have had it confused with RESPECT.
+                <br />
+                &mdash; Remembering Kobe.
+              </p>
+            </div>
+          </article>
+          <article class="card bg-dark">
+            <div class="category category-boxing">Boxing</div>
+            <h3>
+              <a href="article.html">Floyd and the Yung Dro</a>
+            </h3>
+            <p>
+              He's undefeated and made a living in the pocket. How this legend
+              toppled all towers with his signature "Shoulder lean". Let's get
+              back to basics.
+            </p>
+          </article>
+          <article class="card">
+            <img src="img/articles/frankgore.jpg" alt="" />
+            <div class="category category-nfl">Football</div>
+            <h3>
+              <a href="article.html">Frank Gore? Or Father Time</a>
+            </h3>
+            <p>
+              Top 5 rusher All time, 4th All time all purpose yards and knocking
+              on the door of 20k yards. 15 seasons of 500+ rushing yards. Mr.
+              All-purpose is still trucking. How does he do it?
+            </p>
+          </article>
+          <article class="card">
+            <div class="category category-boxing">Boxing</div>
+            <h3>
+              <a href="article.html">The Bite</a>
+            </h3>
+            <p>
+              Mike Tyson was the most exhilirating fighter to watch in my youth.
+              Pound for pound craziest fights I've ever witnessed...how the
+              fight of the century turned into a vicious debacle.
+            </p>
+            <img src="img/articles/tyson.jpg" alt="" />
+          </article>
+          <article class="card">
+            <img src="img/articles/kamara.jpg" alt="" />
+            <div class="category category-nfl">Football</div>
+            <h3>
+              <a href="article.html">No Thomas, No Problem - 6 Teddy's Later</a>
+            </h3>
+            <p>
+              Alvin Kamara single-handedly destroyed every fantasy football team
+              in the Fantasy Bowl this year. 6 Touchdowns...how? Who's to blame,
+              the defense, or no MT?
+            </p>
+          </article>
+          <article class="card bg-primary">
+            <div class="category category-boxing">Boxing</div>
+            <h3>
+              <a href="article.html"
+                >Pacman, Fighting and Fixing the Phillipines</a
+              >
+            </h3>
+            <p>
+              Manny Pacquiao is an accomplished athlete, but he is also an
+              accomplished humanitarian. Take a look and see what he has done
+              for his country.
+            </p>
+          </article>
+          <article class="card">
+            <div>
+              <div class="category category-nba">Basketball</div>
+              <h3>
+                <a class="article-spacing" href="article.html"
+                  >The Legend Nobody Knows, the Compassion Everybody Needs</a
+                >
+              </h3>
+              <p>
+                Formerly known as Chris Jackson, Mohammad Abdul-Rauf, was
+                killing MJ and many more in the peak of his days. Before Colin
+                Kaepernick, there was Abdul-Rauf...
+              </p>
+            </div>
+            <img src="img/articles/abdulrauf.jpg" alt="" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div class="big-logo">
+          <img src="img/RTfull.png" alt="RemberingTitans" />
+        </div>
+        <div>
+          <h3>Email Newsletter</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form>
+            <input type="email" placeholder="Enter Email" />
+            <input type="submit" value="Subscribe" class="btn btn-primary" />
+          </form>
+        </div>
+        <div>
+          <h3>Site Links</h3>
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Join Our Club</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aut.
+          </p>
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <div>Copyright &copy; 2021, Meade Concepts, All Rights Reserved</div>
+      </div>
+    </footer>
   </body>
 </html>
