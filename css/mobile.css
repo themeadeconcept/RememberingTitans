@@ -36,6 +36,21 @@
   grid-column: 1;
 }
 
+.cnt223 {
+  min-width: 600px;
+  width: 600px;
+  min-height: 150px;
+  margin: 100px auto;
+}
+
+.cnt223 h1 {
+  text-align: center;
+}
+
+.cnt223 p {
+  padding-bottom: 0.5rem;
+}
+
 @media (max-width: 600px) {
   /* Stack Grid Items */
   #showcase .showcase-container,
@@ -76,5 +91,25 @@
 
   .l-heading {
     font-size: 2rem;
+  }
+
+  .cnt223 {
+    min-width: 350px;
+    width: 350px;
+    min-height: 70px;
+    margin: 40px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 0.3rem;
+  }
+
+  .cnt223 h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .cnt223 p {
+    padding: 1rem;
   }
 }
