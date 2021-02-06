@@ -10,6 +10,7 @@ I have created this as a complete project that I will deploy at the end.  I do n
 I did, however, create the Logo's and Branding for the web page.
 
 **2nd Entry**
+-02/06/2021-
 
 Project is complete, and has VASTLY increased my understandig of:
 
@@ -21,3 +22,10 @@ Project is complete, and has VASTLY increased my understandig of:
   <li>Wireframing</li>
   <li>Deployment on Netlify</li>
 </ul>
+
+**3rd Entry**
+-02/06/2021-
+
+Changed the Article order because, Ali/Chamberlain wasn't sizing itself right.  Plus Kobe is the man.
+
+Also added a disclaimer pop since the site is now live and can be found here on netlify.  Next update will have site's domain name.
